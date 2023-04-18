@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* this includes navbar css */
+.navbar{
+    height: 4.5vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img {
+    position: relative;
+    left:-350px;
+}
+
+.navbar .navlist {
+    position: relative;
+    left: 300px;
+}
+.navbar .navlist a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    transition: color 1s ease;
+}
+
+.navbar .navlist a:hover {
+    color: red;
+}
+
+.login_navbar {
+    border: 0.5px solid white;
+    width: 85px;
+    height: 4vh;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 20px;
+    color: white;
+    padding: 5px;
+    background-color: black;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.login_navbar:hover {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    height: 4.5vh;
+}
+/* navbar css ended */
+
+/* slider css starts */
+.image_slider_container {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image_slider_container .image_sliders {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.image_sliders .slider_image {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_sliders .slider_content {
+    margin: 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_sliders .slider_content div {
+    height: 60%;
+    width: 60%;
+}
+
+.image_sliders .slider_content div h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.image_sliders .slider_content div button {
+    border: none;
+    font-size: 12px;
+    width: 100px;
+    color: white;
+    background-color: grey;
+    margin-top:30px ;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+@keyframes slider_animation {
+    from {
+      opacity: 0;
+      /* transform: rotate(0deg) scale(0); */
+    }
+    to {
+      opacity: 1;
+      /* transform: rotate(360deg) scale(1); */
+    }
+  }
+
+  .animate {
+    animation: slider_animation 1s ease-in 0s 1 normal none;
+  }
+
+  /* slider thingy ends. Be happy now. W */
+

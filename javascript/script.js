@@ -23,6 +23,12 @@ const slideImage = function() {
   }
 };
 
+// window.onload = function() {
+//   setTimeout(function() {
+//     setInterval(slideImage, 4000);
+//   }, 2000);
+// };
+
 
 window.onload = function() {
   setInterval(slideImage, 4000);

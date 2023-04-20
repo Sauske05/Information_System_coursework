@@ -2,6 +2,7 @@
 var slides = document.querySelectorAll(".image_sliders");
 var count = 0;
 
+
 slides.forEach((slide, index) => {
   slide.style.left = index * 100 + "%";
   console.log(slide.style.left);
@@ -9,7 +10,9 @@ slides.forEach((slide, index) => {
 });
 
 const slideImage = function() {
+  console.log(slides)
   slides.forEach((slide, index) => {
+    var angle = 360;
     slide.style.transform = "translateX(-" + count * 100 + "%)";
     if (index === count) {
       slide.classList.add("animate");
@@ -19,18 +22,12 @@ const slideImage = function() {
   });
   count++;   
   if (count > 2) {
-    count = 0; 
+    count = 0;
+    angle = 0; 
   }
 };
 
-// window.onload = function() {
-//   setTimeout(function() {
-//     setInterval(slideImage, 4000);
-//   }, 2000);
-// };
-
-
 window.onload = function() {
-  setInterval(slideImage, 4000);
+  setInterval(slideImage, 3000);
   
 };

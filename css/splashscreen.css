@@ -18,7 +18,7 @@
   /* start welcome animation */
   
   body.welcome {
-    background: #512da8;
+    background: #d5f5da;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
@@ -26,10 +26,10 @@
   .welcome .splash {
     height: 0px;
     padding: 0px;
-    border: 130em solid #039be5;
+    border: 130em solid #FFFDD0;
     position: fixed;
     left: 50%;
-    top: 100%;
+    top: 100%; 
     display: block;
     box-sizing: initial;
     overflow: hidden;
@@ -41,27 +41,30 @@
   
 
   .welcome #welcome {
-    background: #311b92 ;
+    /* background: #311b92 ; */
+    background: url(../srcs/camera-logo-photography-clip-art-camera.jpg);
+    background-size: contain;
     width: 56px;
     height: 56px;
     position: absolute;
     left: 50%;
     top: 50%;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
     z-index: 99;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
-    animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+    border-radius: 40%;
+    animation: init 1s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
   }
      
   /* moveIn */
   .welcome header,
-  .welcome a.btn {
+  .welcome a.btn, .welcome section .image_slider_container{
     opacity: 0;
     animation: moveIn 2s 3.1s ease forwards;
   }
   
+
   @keyframes init {
     0% {
       width: 0px;
@@ -111,7 +114,7 @@
   
   @keyframes moveUp {
     0% {
-      background: #311b92;
+      /* background: #311b92; */
       top: 100%;
     }
     50% {
@@ -119,7 +122,7 @@
     }
     100% {
       top: 50%;
-      background: #039be5;
+      /* background: #039be5; */
     }
   }
   
@@ -136,7 +139,7 @@
       width: 100%;
       height: 64px;
       border-radius: 0px;
-      top: 26px;
+      top: 0px;
     }
   }
   

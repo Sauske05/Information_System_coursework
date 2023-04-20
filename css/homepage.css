@@ -38,7 +38,7 @@
     width: 85px;
     height: 4vh;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 20px;
     color: white;
     padding: 5px;
@@ -50,7 +50,7 @@
 .login_navbar:hover {
     background-color: white;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     height: 4.5vh;
 }
 /* navbar css ended */

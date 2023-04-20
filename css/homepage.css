@@ -4,8 +4,9 @@
 }
 /* this includes navbar css */
 .navbar{
-    height: 4.5vh;
-    background-color: green;
+    z-index: 99;
+    height: 7vh;
+    background-color: #434141;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,17 +19,17 @@
 
 .navbar .navlist {
     position: relative;
-    left: 300px;
+    left: 400px;
 }
 .navbar .navlist a {
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     text-decoration: none;
     padding-left: 50px;
     transition: color 1s ease;
 }
 
-.navbar .navlist a:hover {
+.navbar .navlist a:hover{
     color: red;
 }
 
@@ -56,6 +57,7 @@
 
 /* slider css starts */
 .image_slider_container {
+    background-color: #E5E5E5;
     position: relative;
     height: 80vh;
     width: 100%;
@@ -80,31 +82,45 @@
 
 .image_sliders .slider_content {
     margin: 20px;
-    background-color: aliceblue;
+    /* background-color: #E5E5E5; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .image_sliders .slider_content div {
+    position: relative;
+    top: 10%;
     height: 60%;
     width: 60%;
 }
 
 .image_sliders .slider_content div h1 {
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 900;
+}
+
+.image_sliders .slider_content div p {
+    font-size: 18px;
 }
 
 .image_sliders .slider_content div button {
     border: none;
-    font-size: 12px;
-    width: 100px;
+    font-size: 16px;
+    width: 130px;
     color: white;
     background-color: grey;
     margin-top:30px ;
-    padding: 12px;
+    padding: 14px;
     border-radius: 15px;
+}
+
+.image_sliders .slider_content div button:hover {
+
+    color: black;
+    background-color: red;
+    font-size: 20px;
+    transition: all 0.5s ease;
 }
 
 @keyframes slider_animation {

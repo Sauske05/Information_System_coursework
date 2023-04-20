@@ -1,43 +1,28 @@
-/* body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  } 
-  
-  main {
-    flex: 1 0 auto;
-  }
-  
-  h1.title,
-  .footer-copyright a {
-    font-family: 'Architects Daughter', cursive;
-    text-transform: uppercase;
-    font-weight: 900;
-  } */
-  
   /* start welcome animation */
   
   body.welcome {
-    background: #d5f5da;
+    background: #E5E5E5;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
-  
+/*   
   .welcome .splash {
     height: 0px;
     padding: 0px;
     border: 130em solid #FFFDD0;
     position: fixed;
     left: 50%;
-    top: 100%; 
-    display: block;
-    box-sizing: initial;
-    overflow: hidden;
-    z-index: 99;
-    border-radius: 50%;
+    top: 100%;  */
+    /* display: block; */
+    /* box-sizing: initial; */
+    /* overflow: hidden; */
+    /* border-radius: 50%;
+    display: none;
     transform: translate(-50%, -50%);
-    animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
-  }
+    animation: puff 0.5s 1.8s forwards, borderRadius 0.2s 2.3s linear forwards; */
+    /* cubic-bezier(0.55, 0.055, 0.675, 0.19) */
+/*     
+  } */
   
 
   .welcome #welcome {
@@ -49,19 +34,24 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    z-index: 2;
     overflow: hidden;
     opacity: 1;
-    z-index: 99;
     transform: translate(-50%, -50%);
     border-radius: 40%;
-    animation: init 1s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+    animation: init 1s 0.2s forwards, moveDown 1s 0.8s forwards, moveUp 1s 1.8s forwards, materia 0.5s 2.7s forwards, hide 2s 2.9s linear forwards;
+    /* cubic-bezier(0.55, 0.055, 0.675, 0.19)  */
+    /* cubic-bezier(0.6, -0.28, 0.735, 0.045) */
+    /* cubic-bezier(0.175, 0.885, 0.32, 1.275)  */
+    /* cubic-bezier(0.86, 0, 0.07, 1) */
+    
   }
      
   /* moveIn */
   .welcome header,
   .welcome a.btn, .welcome section .image_slider_container{
     opacity: 0;
-    animation: moveIn 2s 3.1s ease forwards;
+    animation: moveIn 1s 3.1s ease forwards;
   }
   
 
@@ -77,14 +67,17 @@
       opacity: 1;
     }
   }
-  
+/*   
   @keyframes puff {
+  
     0% {
+      display: block;
       top: 100%;
       height: 0px;
       padding: 0px;
     }
     100% {
+      display: block;
       top: 50%;
       height: 100%;
       padding: 0px 100%;
@@ -93,12 +86,14 @@
   
   @keyframes borderRadius {
     0% {
+      display: block;
       border-radius: 50%;
-    }
-    100% {
+    } 
+     100%{
+      display: block;
       border-radius: 0px;
     }
-  }
+  } */
   
   @keyframes moveDown {
     0% {
@@ -108,14 +103,14 @@
       top: 40%;
     }
     100% {
-      top: 100%;
+      top: 80%;
     }
   }
   
   @keyframes moveUp {
     0% {
       /* background: #311b92; */
-      top: 100%;
+      top: 80%;
     }
     50% {
       top: 40%;
@@ -126,22 +121,25 @@
     }
   }
   
+
   @keyframes materia {
     0% {
-      background: #039be5;
-    }
-    50% {
-      background: #039be5;
-      top: 26px;
+      background:#434141;
     }
     100% {
-      background: #311b92;
+      background: #434141;
+      top: 26px;
+    }
+
+    100% {
+      background: #434141;
       width: 100%;
       height: 64px;
       border-radius: 0px;
       top: 0px;
     }
   }
+
   
   @keyframes moveIn {
     0% {
@@ -158,5 +156,7 @@
     }
     100% {
       opacity: 0;
+      top: 0px;
+      display: none;
     }
   } 

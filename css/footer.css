@@ -1,0 +1,104 @@
+.footer {
+    height: 50vh;
+    width: 100%;
+    /* background-color: green; */
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.footer_container {
+    margin: 10px;
+    height: 80%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: green; */
+}
+
+.footer_head{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 32%;
+    bottom: 20%;
+}
+
+.footer_head h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.footer_head img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* .footer_container1 {
+    background-color: peru;
+} */
+
+.footer_contact_block {
+    width: 80%;
+    margin-top: 60px;
+    position: relative;
+    right: 15%;
+    list-style-type: none;
+    display: flex;
+}
+
+.footer_company li {
+    margin-top: 10px;
+}
+
+.footer_follow_us {
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 20%;
+}
+
+.footer_follow_us h2 {
+    margin-bottom: 20px;
+}
+
+.footer_follow_us img {
+    margin-left: 20px;
+}
+
+.footer_container2 form input{
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.footer_container2 form textarea {
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.footer_submit_button {
+    border-radius: 10px;
+    padding: 15px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+.footer_submit_button:hover {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+
+.footer_container2 h2 {
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}

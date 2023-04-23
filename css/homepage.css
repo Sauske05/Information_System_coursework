@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 /* this includes navbar css */
 .navbar{
@@ -18,6 +19,9 @@
 }
 
 .navbar .navlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     left: 400px;
 }
@@ -27,6 +31,12 @@
     text-decoration: none;
     padding-left: 50px;
     transition: color 1s ease;
+}
+
+.navbar .navlist img {
+    position: relative;
+    padding-left: 10px;
+    left: 10px;
 }
 
 .navbar .navlist a:hover{
@@ -70,7 +80,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    transition: 1s;
+    transition: all 1s ease;
 }
 
 .image_sliders .slider_image {

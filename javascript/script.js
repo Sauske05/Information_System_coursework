@@ -31,3 +31,22 @@ window.onload = function() {
   setInterval(slideImage, 3000);
   
 };
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var demo = document.querySelector(".demo");
+  var strings = ["Explore the World of Lens and Cameras"];
+  var currentStringIndex = 0;
+  var currentCharIndex = 0;
+  var direction = 1;
+  var intervalId = setInterval(function() {
+    var currentString = strings[currentStringIndex];
+    var currentChar = currentString.charAt(currentCharIndex);
+    demo.textContent = currentString.substring(0, currentCharIndex + 1);
+    currentCharIndex += direction;
+    if (currentCharIndex === currentString.length || currentCharIndex === 0) {
+      direction = -direction;
+      currentStringIndex = (currentStringIndex + 1) % strings.length;
+    }
+  }, 70);
+});

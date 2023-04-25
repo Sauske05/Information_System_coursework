@@ -27,11 +27,10 @@
   
 
   .welcome #welcome {
-    /* background: #311b92 ; */
-    background: url(../srcs/camera-logo-photography-clip-art-camera.jpg);
+   background: url(../srcs/camera-logo-photography-clip-art-camera.jpg);
     background-size: contain;
-    width: 56px;
-    height: 56px;
+    width: 44.8px;
+    height: 44.8px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -67,8 +66,8 @@
       height: 0px;
     }
     100% {
-      width: 56px;
-      height: 56px;
+      width: 44.8px;
+      height: 44.8px;
       /* margin-top: 0px; */
       opacity: 1;
     }

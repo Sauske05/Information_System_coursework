@@ -1,104 +1,41 @@
 .footer {
-    height: 55vh;
+    height: 40vh;
     width: 100%;
-    /* background-color: green; */
-    padding: 24px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
 }
-
 .footer_container {
-    margin: 10px;
-    height: 80%;
+    height: 90%;
+    width: 100%;
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    /* background-color: green; */
 }
 
-.footer_head{
-    width: 100%;
-    position: relative;
+.footer_container .footer_container1{
+    flex: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 20%;
-    bottom: 25%;
+    list-style: none;
+    margin: 10px;
 }
 
-.footer_head h1 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-right: 16px;
-}
-
-.footer_head img {
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-/* .footer_container1 {
-    background-color: peru;
-} */
-
-.footer_contact_block {
-    width: 80%;
-    margin-top: 48px;
-    right: 25%;
+.footer_container .footer_container1 .footer_container_services {
     position: relative;
-    list-style-type: none;
-    display: flex;
+    right: 20%;
+}
+.footer_container .footer_container1 .footer_container_services h2{
+    margin-bottom: 20%;
+    bottom: 20%;
+}
+.footer_container .footer_container1 .footer_container_query h2{
+    margin-bottom: 20%;
+    bottom: 20%;
 }
 
-.footer_company li {
-    margin-top: 10px;
+.footer_container .footer_container1 .footer_container_services li, .footer_container_query li {
+    margin: 5px;
+
 }
 
-.footer_follow_us {
-    text-align: center;
-    width: 50%;
-    position: relative;
-    left: 20%;
-}
-
-.footer_follow_us h2 {
-    margin-bottom: 20px;
-}
-
-.footer_follow_us img {
-    margin-left: 20px;
-}
-
-.footer_container2 form input{
-    padding: 10px;
-    margin: 10px 10px;
-}
-
-.footer_container2 form textarea {
-    margin-top: 10px;
-    position: relative;
-    margin-left: 10px;
-}
-
-.footer_submit_button {
-    border-radius: 10px;
-    padding: 15px;
-    width: 90px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    transition: all 0.5s ease;
-}
-.footer_submit_button:hover {
-    background-color: white;
-    color: black;
-    font-size: 18px;
-}
-
-
-.footer_container2 h2 {
-    margin-top: 10%;
-    margin-left: 20px;
-    margin-bottom: 30px;
+.footer_container .footer_container2 {
+    flex: 50%;
+    margin: 10px;
 }

@@ -50,7 +50,7 @@
   /* moveIn */
   .welcome header,
   /* .welcome a.btn, */
-   .welcome section .image_slider_container, .products{
+   .welcome section .image_slider_container, .products, .typing_text{
     opacity: 0;
     animation: moveIn 1s 3.1s ease forwards;
   }

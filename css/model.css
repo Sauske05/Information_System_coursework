@@ -1,0 +1,244 @@
+
+/* model css */
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.model{
+    margin-top: 10%;
+    box-shadow:0px 0px 13px 3px rgba(110,110,110,0.76) ;
+    display: flex;
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+}
+.model_product_image{
+    background-color: whitesmoke;
+    padding: 8px;
+    width: 30%;
+}
+.model_product_image img{
+    width: 100%;
+}
+
+.model_galary{
+    display: flex;
+}
+
+.model_galary img{
+    width: 27%;
+    margin: 10px;
+}
+
+.model .rating .star{
+    font-size: 2rem;
+}
+
+.product_brand{
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+.model_content{
+    background-color: white;
+    /* margin-top: 10px; */
+    width: 38%;
+    padding: 8px;
+    /* margin-left: 16px; */
+
+}
+.model_content h2{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.model_questions a{
+    font-size: 18px;
+    text-decoration-line: none;
+    color: #8b8a8a;
+}
+
+.price_tag{
+    font-size: 32px;
+}
+
+.love{
+    width: 100%;
+    display: flex;
+}
+.price_tag p{
+    padding-top: 10px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.share{
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+.share img{
+    margin-left: 30px;
+}
+
+.sponsored_discount{
+    margin-top: 15px;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.sponsored_discount img{
+    width:100%;
+    height:120px;
+
+}
+
+.add_quantity{
+    margin-left: 100px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+.add_quantity button{
+    background-color: orange;
+    border: none;
+    font-size: 28px;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+}
+.add_quantity span{
+    display:block;
+    width: 100px;
+    height: 40px;
+    font-size:28px;
+    text-align: center;
+}
+.purchase_method{
+    width: 100%;
+    display: flex;
+}
+.purchase_method button{
+    font-size: 20px;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    margin-left: 60px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.delivery{
+    background-color: whitesmoke;
+    width: 30%;
+    padding-left: 16px;
+}
+
+.delivery_location{
+    padding: 10px;
+}
+.delivery_location h3{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.locate{
+    display: flex;
+}
+
+.locate p{
+    width: 250px;
+}
+.locate a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.delivery_service{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery_service p{
+    font-size: 20px;
+    height: 23px;
+}
+
+.deliver_date{
+    overflow-x: visible;
+}
+
+.deliver_date p{
+    position: relative;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 25px;
+    margin-top: -40px;
+}
+
+.deliver_free{
+    font-size: 20px !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+}
+
+.seller p,h3{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.seller p{
+    font-size: 20px;
+}
+
+.seller_detail{
+    padding: 10px;
+    display: flex;
+}
+
+.chat{
+    width: 150px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+.seller_record{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.seller_record p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.seller_record h4{
+    height: 60px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    
+}
+
+.seller_record div{
+    width: 110px;
+}

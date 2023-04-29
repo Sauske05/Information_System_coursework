@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/homepage.css">
     <link rel="stylesheet" href="../css/splashscreen.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/model.css">
     <title>Document</title>
 </head>
 
@@ -17,6 +18,7 @@
     <header>
         <div class="navbar">
             <img src="../srcs/camera-logo-photography-clip-art-camera.jpg" alt="" height="36px" width="36px">
+            <h2>ClickIt</h2>
             <div class="navlist">
                 <a href="">SHOP</a>
                 <a href="">BLOG</a>
@@ -40,7 +42,7 @@
                         <button class="slider_button" onclick="">Shop Now</button>
                     </div>
                 </div>
-                <div class="slider_image"><img src="../srcs/camera (3).png" alt=""></div>
+                <div class="slider_image"><img src="../srcs/camera (3).png" alt="" style="overflow: hidden;"></div>
             </div>
             <div class="image_sliders">
                 <div class="slider_content">
@@ -69,14 +71,21 @@
         </div>
     </section>
 
-    <section class="products">
-        <div class="auto_type"><h1 class="demo"></h1></div>
-        <div class="search_box">
-            <div class="search_area">
-                <input type="text" name="Search_product" class="search_bar" placeholder="Search for products..">
+    
+        <!-- <div class="auto_type"><h1 class="demo"></h1></div> -->
+        <section class="typing_text">
+            <div class="typing_sec">
+                <div class="type_content">
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000"
+                            data-type='[ "Welcome to FlashBack", "I am Shutter of your memories.", "I click your each memoriable moment.", "I Love to recall your flashback." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                </div>
             </div>
-            <img src="../srcs/search-icon.png" alt="" class="search_icon_img">
-        </div>
+        </section>
+        <!-- <section class="products">
         <h1 class="h1_products">Products Overview</h1>
         <div class="product_sample">
             <div class="ps product_sample1"></div>
@@ -85,6 +94,443 @@
         </div>
         <div>
             <button class="product_overview_btn">View More</button>
+        </div>
+    </section> -->
+    
+    <section class="products">
+        <!-- <div class="search_box">
+            <div class="search_area">
+                <input type="text" name="Search_product" class="search_bar" placeholder="Search for products..">
+            </div>
+            <img src="../srcs/search-icon.png" alt="" class="search_icon_img">
+        </div> -->
+
+        <h1 class="Overview_title">Products Overview</h1>
+
+        <!-- category section  -->
+
+        <div class="category_lists">
+            <div id="list_item">
+                <button class="category_type" onclick="openCity('cameras')" href="#">Cameras</button>
+                <button class="category_type" onclick="openCity('lenses')" href="#">Lenses</button>
+                <button class="category_type" onclick="openCity('cells')" href="#">Cells</button>
+
+            </div>
+        </div>
+
+        <div id="cameras" class="product_sample">
+            <div class="product_s">
+                <div class="ps product_sample1">
+                    <a class="view-btn" onclick="click()" href="#"><img src="../srcs/cameras/pexels-photo-1787236.jpeg"
+                            alt=""></a>
+                </div>
+
+                <!-- js is in script file -->
+                <!-- quick view of product      -->
+                <div class="modal">
+                    <div class="model">
+                        <div class="model_product_image">
+                            <img src="./casual/can1.png" alt="">
+                            <div class="model_galary">
+                                <img src="./casual/can1.png" alt="">
+                                <img src="./casual/can1.png" alt="">
+                                <img src="./casual/can1.png" alt="">
+                                <!-- <img src="./casual/can1.png" alt=""> -->
+                            </div>
+                        </div>
+
+                        <div class="model_content">
+                            <h2>Canon EOS | Rebel T7 DSLR Cameras</h2>
+                            <div class="rating">
+                                <div class="rate">
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                </div>
+                                <div class="product_brand"><b> | Brand:</b> Canon</div>
+
+                            </div>
+                            <div class="model_questions">
+                                <a href="#">Question has been answered | More information of product</a>
+                            </div>
+                            <div class="love">
+                                <div class="price_tag">
+                                    <p>Rs.2000 /- <span style="font-size:20px ;"> only</span></p>
+                                    <p style="color:red ;"><strike>Rs.3000 </strike> -20%</p>
+                                </div>
+                                <div class="share">
+                                    <a href="#"><img src="./casual/share.png" alt="" width="20%"></a>
+                                    <a href="#"><img src="./casual/love.png" alt="" width="20%"></a>
+                                </div>
+                            </div>
+
+                            <div class="sponsored_discount">
+                                <img src="./image/disbanner1.avif" alt="Discount" width="100%">
+
+                            </div>
+
+                            <div class="add_quantity">
+                                <button onclick="subtractQuantity()">-</button>
+                                <span id="quantity">0</span>
+                                <button onclick="addQuantity()">+</button>
+                            </div>
+
+                            <div class="purchase_method">
+                                <button type="button" style="background-color: aqua;">Buy Now</button>
+                                <button type="button" style="background-color:orange ;">Add to Cart</button>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="delivery">
+                            <div class="delivery_location">
+                                <h3>Delivery</h3>
+                                <div class="locate">
+                                    <img src="./image/location.png" alt="" width="15%">
+                                    <p>Bagmati, Kathmandu Metro 22 - Newroad Area, Newroad</p>
+                                    <a href="#">Change</a>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <div class="delivery_service">
+                                <img src="./image/delivery.png" alt="" width="40%">
+                                <p>Standard Delivery</p>
+                            </div>
+                            <div class="deliver_date">
+                                <p>4days - 7days</p>
+                                <p class="deliver_free">Free Delivery</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="seller_detail">
+                                <div class="seller">
+                                    <h3>Seller Details:</h3>
+                                    <p>Luxriya Enterprises</p>
+                                </div>
+                                <div class="chat">
+                                    <img src="./image/chat.png" alt="Chat" width="50%">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="seller_record">
+                                <div class="ratin">
+                                    <h4>Rating</h4>
+                                    <p>89%</p>
+                                </div>
+
+                                <div class="ship_on">
+                                    <h4>Ship on Time</h4>
+                                    <p>100%</p>
+                                </div>
+
+                                <div class="chat_response">
+                                    <h4>Chat Response Rate</h4>
+                                    <p>100%</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- quick view ended -->
+
+                <div class="ps product_sample2">
+                    <a href=""><img src="../srcs/cameras/pexels-isaac-taylor-2229671.jpg" alt=""></a>
+                </div>
+                <div class="ps product_sample3">
+                    <a href=""><img src="../srcs/cameras/pexels-luis-quintero-1787234.jpg" alt=""></a>
+                </div>
+                <div class="ps product_sample3">
+                    <a href=""><img src="../srcs/cameras/pexels-photo-1787236.jpeg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="lenses" class="product_sample" style="display:none;">
+            <div class="product_s">
+                <div class="ps product_sample1">
+                    <a class="view-btn" onclick="click()" href="#"><img src="../srcs/lenses/lense (1).jpg" alt=""></a>
+                </div>
+                <!-- quick view of product      -->
+                <div class="modal">
+                    <div class="model">
+                        <div class="model_product_image">
+                            <img src="./casual/can1.png" alt="">
+                            <div class="model_galary">
+                                <img src="./casual/can1.png" alt="">
+                                <img src="./casual/can1.png" alt="">
+                                <img src="./casual/can1.png" alt="">
+                                <!-- <img src="./casual/can1.png" alt=""> -->
+                            </div>
+                        </div>
+
+                        <div class="model_content">
+                            <h2>Canon EOS | Rebel T7 DSLR Cameras</h2>
+                            <div class="rating">
+                                <div class="rate">
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                </div>
+                                <div class="product_brand"><b> | Brand:</b> Canon</div>
+
+                            </div>
+                            <div class="model_questions">
+                                <a href="#">Question has been answered | More information of product</a>
+                            </div>
+                            <div class="love">
+                                <div class="price_tag">
+                                    <p>Rs.2000 /- <span style="font-size:20px ;"> only</span></p>
+                                    <p style="color:red ;"><strike>Rs.3000 </strike> -20%</p>
+                                </div>
+                                <div class="share">
+                                    <a href="#"><img src="./casual/share.png" alt="" width="20%"></a>
+                                    <a href="#"><img src="./casual/love.png" alt="" width="20%"></a>
+                                </div>
+                            </div>
+
+                            <div class="sponsored_discount">
+                                <img src="./image/disbanner1.avif" alt="Discount" width="100%">
+
+                            </div>
+
+                            <div class="add_quantity">
+                                <button onclick="subtractQuantity()">-</button>
+                                <span id="quantity">0</span>
+                                <button onclick="addQuantity()">+</button>
+                            </div>
+
+                            <div class="purchase_method">
+                                <button type="button" style="background-color: aqua;">Buy Now</button>
+                                <button type="button" style="background-color:orange ;">Add to Cart</button>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="delivery">
+                            <div class="delivery_location">
+                                <h3>Delivery</h3>
+                                <div class="locate">
+                                    <img src="./image/location.png" alt="" width="15%">
+                                    <p>Bagmati, Kathmandu Metro 22 - Newroad Area, Newroad</p>
+                                    <a href="#">Change</a>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <div class="delivery_service">
+                                <img src="./image/delivery.png" alt="" width="40%">
+                                <p>Standard Delivery</p>
+                            </div>
+                            <div class="deliver_date">
+                                <p>4days - 7days</p>
+                                <p class="deliver_free">Free Delivery</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="seller_detail">
+                                <div class="seller">
+                                    <h3>Seller Details:</h3>
+                                    <p>Luxriya Enterprises</p>
+                                </div>
+                                <div class="chat">
+                                    <img src="./image/chat.png" alt="Chat" width="50%">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="seller_record">
+                                <div class="ratin">
+                                    <h4>Rating</h4>
+                                    <p>89%</p>
+                                </div>
+
+                                <div class="ship_on">
+                                    <h4>Ship on Time</h4>
+                                    <p>100%</p>
+                                </div>
+
+                                <div class="chat_response">
+                                    <h4>Chat Response Rate</h4>
+                                    <p>100%</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- quick view ended -->
+                <div class="ps product_sample2">
+                    <a href="#"><img src="../srcs/lenses/lense (2).jpg" alt=""></a>
+                </div>
+                <div class="ps product_sample3">
+                    <a href="#"><img src="../srcs/lenses/lense (3).jpg" alt=""></a>
+                </div>
+                <div class="ps product_sample3">
+                    <a href="#"><img src="../srcs/lenses/lense (4).jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="cells" class="product_sample" style="display:none;">
+            <div class="product_s">
+                <div class="ps product_sample5">
+                    <a class="view-btn" onclick="click()" href="#"><img src="../srcs/cells/cell (1).png" alt=""></a>
+                </div>
+                <!-- quick view of product      -->
+                <div class="modal">
+                    <div class="model">
+                        <div class="model_product_image">
+                            <img src="./casual/can1.png" alt="">
+                            <div class="model_galary">
+                                <img src="./casual/can1.png" alt="">
+                                <img src="./casual/can1.png" alt="">
+                                <img src="./casual/can1.png" alt="">
+                                <!-- <img src="./casual/can1.png" alt=""> -->
+                            </div>
+                        </div>
+
+                        <div class="model_content">
+                            <h2>Canon EOS | Rebel T7 DSLR Cameras</h2>
+                            <div class="rating">
+                                <div class="rate">
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                    <button class="star">&#9734;</button>
+                                </div>
+                                <div class="product_brand"><b> | Brand:</b> Canon</div>
+
+                            </div>
+                            <div class="model_questions">
+                                <a href="#">Question has been answered | More information of product</a>
+                            </div>
+                            <div class="love">
+                                <div class="price_tag">
+                                    <p>Rs.2000 /- <span style="font-size:20px ;"> only</span></p>
+                                    <p style="color:red ;"><strike>Rs.3000 </strike> -20%</p>
+                                </div>
+                                <div class="share">
+                                    <a href="#"><img src="./casual/share.png" alt="" width="20%"></a>
+                                    <a href="#"><img src="./casual/love.png" alt="" width="20%"></a>
+                                </div>
+                            </div>
+
+                            <div class="sponsored_discount">
+                                <img src="./image/disbanner1.avif" alt="Discount" width="100%">
+
+                            </div>
+
+                            <div class="add_quantity">
+                                <button onclick="subtractQuantity()">-</button>
+                                <span id="quantity">0</span>
+                                <button onclick="addQuantity()">+</button>
+                            </div>
+
+                            <div class="purchase_method">
+                                <button type="button" style="background-color: aqua;">Buy Now</button>
+                                <button type="button" style="background-color:orange ;">Add to Cart</button>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="delivery">
+                            <div class="delivery_location">
+                                <h3>Delivery</h3>
+                                <div class="locate">
+                                    <img src="./image/location.png" alt="" width="15%">
+                                    <p>Bagmati, Kathmandu Metro 22 - Newroad Area, Newroad</p>
+                                    <a href="#">Change</a>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <div class="delivery_service">
+                                <img src="./image/delivery.png" alt="" width="40%">
+                                <p>Standard Delivery</p>
+                            </div>
+                            <div class="deliver_date">
+                                <p>4days - 7days</p>
+                                <p class="deliver_free">Free Delivery</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="seller_detail">
+                                <div class="seller">
+                                    <h3>Seller Details:</h3>
+                                    <p>Luxriya Enterprises</p>
+                                </div>
+                                <div class="chat">
+                                    <img src="./image/chat.png" alt="Chat" width="50%">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="seller_record">
+                                <div class="ratin">
+                                    <h4>Rating</h4>
+                                    <p>89%</p>
+                                </div>
+
+                                <div class="ship_on">
+                                    <h4>Ship on Time</h4>
+                                    <p>100%</p>
+                                </div>
+
+                                <div class="chat_response">
+                                    <h4>Chat Response Rate</h4>
+                                    <p>100%</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- quick view ended -->
+                <div class="ps product_sample5">
+                    <img src="../srcs/cells/cell (3).png" alt="">
+                </div>
+                <div class="ps product_sample5">
+                    <img src="../srcs/cells/cell (5).png" alt="">
+                </div>
+                <div class="ps product_sample5">
+                    <img src="../srcs/cells/cell (8).png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="over_view">
+            <a href="#">View More</a>
         </div>
     </section>
 

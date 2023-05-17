@@ -1,0 +1,73 @@
+.blog_homepage{
+    height: 100vh;
+    width: 100%;
+
+}
+.blog_homepage h2 {
+    margin-left: 10%;
+    font-weight: 600;
+    font-size: 48px;
+    margin-top:56px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    border-left: 4px solid orange;
+}
+.homepage_blog_containers{
+height: 70vh;
+width: 100%;
+display: flex;
+overflow: hidden;
+align-items: center;
+justify-content: center;
+}
+
+.homepage_blog_containers .blog {
+    /* background-color: red; */
+    height: 65vh;
+    width: 30%;
+    margin:0 10px;
+    box-shadow:  3px 5px 4px 5px #5d5c5c;
+}
+
+.blog .blog_image_homepage{
+    cursor: pointer;
+    height: 25vh;
+    width: 100%;
+    background-image: url("../srcs/tech_photo.jfif");
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.blog .blog_image_homepage:hover{
+    width: 120%;
+    height: 28vh;
+}
+
+.blog_button_homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog_content_homepage h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.blog_content_homepage button {
+    border: none;
+    font-size: 14px;
+    width: 130px;
+    color: white;
+    background-color: grey;
+    margin-top:30px ;
+    padding: 14px;
+    border-radius: 15px; 
+}
+
+.blog_content_homepage button:hover{
+    color: black;
+    background-color: red;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+

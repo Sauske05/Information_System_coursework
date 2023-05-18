@@ -95,7 +95,7 @@ function type() {
   }
 
   // Use setTimeout to call the function again after a delay
-  setTimeout(type, isTyping ? 200 : 100);
+  setTimeout(type, isTyping ? 100 : 50);
 }
 
 // Call the function to start the typing and erasing animation

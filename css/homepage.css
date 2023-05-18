@@ -5,6 +5,7 @@
 }
 /* this includes navbar css */
 header{
+   background-color: #e5e3dc;
     position: relative;
     height: 5.6vh;
     width: 100%;
@@ -99,15 +100,16 @@ body {
 
 .login_navbar:hover {
     background-color: white;
+    width: 80px;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     height: 3.6vh;
 }
 /* navbar css ended */
 
 /* slider css starts */
 .image_slider_container {
-    background-color: #E5E5E5;
+    background-color: #e5e3dc;
     /* background-color: green; */
     position: relative;
     height: 80vh;
@@ -337,7 +339,7 @@ body {
     width: 130px;
     color: white;
     background-color: grey;
-    margin-top:10px;
+    margin-bottom:10px;
     padding: 14px;
     border-radius: 15px; 
 }
@@ -347,4 +349,8 @@ body {
     background-color: red;
     font-size: 18px;
     transition: all 0.5s ease;
+}
+
+.products_background_img {
+background: url(../srcs/product_background_image.jpg);
 }

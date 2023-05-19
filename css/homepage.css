@@ -25,10 +25,12 @@ body {
 
 .navbar{
     /* position: relative; */
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
     position: fixed;
     top: 5%;
-    left: 10%;
-    width: 80%;
+    left: 5%;
+    width: 90%;
     border-radius: 20px;
     /* z-index: 99; */
     /* overflow: hidden; */
@@ -70,30 +72,33 @@ body {
     transition: color 1s ease;
 }
 
-.navbar .navlist img {
+.navbar .navlist a:hover {
+    color: red;
+}
+.navbar .navlist .cart_image_button_homepage {
     position: relative;
     padding-left: 8px;
-    left: 8px;
+    left: 16px;
+    margin-right: 10px;
+    transition: color 1s ease;
 }
 
-.navbar .navlist a:hover{
-    color: red;
+.navbar .navlist .cart_image_button_homepage:hover{
+    background-color: red;
 }
 
 .navlist button {
-    padding: 0px 15px;
+    font-weight: 600;
 
 }
 .login_navbar {
-    border: 0.5px solid white;
+    background-color: white;
     width: 68px;
-    height: 3.2vh;
-    border-radius: 4px;
+    height: 4vh;
     font-size: 12.8px;
     margin-left: 16px;
-    color: white;
-    padding: 5px;
-    background-color: black;
+    color: black;
+    /* padding: 10px; */
     transition: all 0.3s ease;
     text-align: center;
 }

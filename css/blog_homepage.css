@@ -15,16 +15,17 @@
 }
 .homepage_blog_container{
 /* background-color: purple; */
-margin-left: 20px;
+margin-left: 100px;
 margin-right: 20px;
 height: 65vh;
-width: 100%;
+width: 95%;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
 .homepage_blog_container .blog_image_homepage {
+    margin-right: 20px;
     box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.77);
     border: 5px solid white;
     background: url(../srcs/wp5969862-camera-black-wallpapers.jpg);
@@ -39,17 +40,17 @@ justify-content: center;
     width: 50%;
 }
 .blog_content_homepage h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 100px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .blog_content_homepage p {
-    font-size: 14px;
+    font-size: 15px;
     padding: 10px;
     padding-left: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 .blog_button_homepage {

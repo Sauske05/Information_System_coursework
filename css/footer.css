@@ -1,18 +1,15 @@
-.footer{
-  background-color: #e5e3dc;
-  /* height: 100vh; */
-}
+
 .footer_contents{
+  font-family: monospace;
   width: 80%;
   margin-left:10%;
   box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.77);
   border-radius: 20px;
-  margin-top: 20px;
 
 }
 .payment_content{
   text-align: center;
-  background-color:#e5e3dc;
+  background-color:whitesmoke;
   padding-bottom: 15px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -41,17 +38,32 @@
 .Best_Seller{
   width: 30% !important;
 }
+
+.Best_Seller h4 {
+  margin: 20px 0px;
+  cursor: pointer;
+}
 .Best_Seller p{
+  cursor: pointer;
+  margin-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
   color: rgb(225, 225, 225);
   font-family: monospace;
+  transition: color 1s ease;
+}
+
+.Best_Seller p:hover{
+  color: red;
 }
 .b1{
   width: 250px;
   overflow: hidden;
 }
 .b1 p{
+  margin: 13px 0px;
+  /* padding:13px 0px ; */
   font-size: 16px !important;
 }
 
@@ -89,7 +101,7 @@
   font-weight: 600;
   padding-top: 2vh;
   height: 70px;
-  background-color:#e5e3dc;
+  background-color:whitesmoke;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }

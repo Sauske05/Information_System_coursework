@@ -8,14 +8,14 @@
     height: 65vh;
     width: 60%;
     background: url(../srcs/My\ project.jpg);
-    background-size: contain;
+    background-size: cover;
     color: white;
 }
 .homepage_about_us2 {
     height: 65vh;
     width: 40%;
-    background: url(../srcs/My\ project.jpg);
-    background-size: contain;
+    background: url(../srcs/AboutUs_images/work.jpeg);
+    background-size: cover;
     color: white;
 }  
 

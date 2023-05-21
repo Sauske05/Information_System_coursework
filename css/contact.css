@@ -1,0 +1,149 @@
+
+
+.contact_us_background_image{
+    background-image: url(../srcs/contact/bg-13.jpg);
+    background-attachment: fixed;
+    width: 99%;
+    height: 500px;
+    top: 0px;
+
+}
+
+.contact_us_background_image:before {
+    position: absolute;
+    content: '';
+    background: rgba(29, 23, 71, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:510px;
+}
+
+/* home icon css  */
+
+.icon{
+   position: relative;
+   margin-top: -28px;
+    width: 100%;
+
+}
+.home_icon a img{
+    position: relative;
+    width: 40%;
+}
+.home_icon a{
+    margin: 0px;
+    width: 107px;
+}
+
+.home_icon{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width:20% ;
+    position: relative;
+    background-color: whitesmoke;
+    box-shadow: 0px 10px 22px -2px #BFBFBF;
+    margin-left: 10%;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+}
+.border1{
+margin-top: 6px;
+border: 2px solid #434141;
+height: 30px;
+width: 1px;
+background-color: #434141;
+
+}
+.icon p{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 32px;
+}
+.contact_us{
+    width: 100%;
+}
+.contact{
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+}
+.form_content{
+    width: 65%;
+    position: relative;
+    
+}
+.form_content h1{
+    font-size: 46px;
+    color: #666565;
+}
+.form_content input{
+    width: 350px;
+    height: 40px;
+    border: 2px solid;
+    border-color:#434141 ;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+}
+.email{
+    margin-top: 20px;
+}
+.emai{
+    margin-left: 20px;
+}
+.description{
+    width: 94% !important;
+    height: 100px !important;
+}
+.Submit_btn{
+    position: absolute;
+    right: 6%;
+    width: 150px;
+    font-size: 20px;
+    height: 40px;
+    font-weight: 600;
+    border: 2px solid;
+    border-color:#434141 ;
+    border-radius: 10px;
+}
+
+.branch_box{
+    width: 100%;
+
+}
+.branches{
+    margin-left: 5%;
+}
+
+.office1 h2 {
+    color: #666565;
+    border-left: 4px solid #434141 ;
+    padding-left: 30px;
+    width: 100%;
+    margin-top: 40px !important;
+    font-size: 35px;
+    
+}
+
+.office1 p {
+    font-size: 20px;
+    padding-left: 34px;
+    color: #BFBFBF;
+}
+
+.office1 a {
+    font-size: 20px;
+    text-decoration-line: none;
+    color: #434141;
+    padding-left: 34px;
+}
+
+
+/* 
+// style.css */
+
+
+

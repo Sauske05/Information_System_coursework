@@ -1,0 +1,248 @@
+
+/* body{
+    background: url(./image/productbg.jpg);
+    z-index: -1;
+} */
+.refrence_header_bg{
+    background: url(./reference/re\ \(1\).jpg);
+    height: 600px;
+    background-size: cover;
+}
+
+.refrence_header_bg:before {
+    position: absolute;
+    content: '';
+    background: rgba(29, 23, 71, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:592px;
+    opacity: 0.8;
+}
+
+.refrence_header_bg{
+    width: 101.5%;
+    margin-left: -1%;
+    margin-top: -1%;
+
+}
+.reference_title{
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+}
+.ref_title_name{
+    text-align: center;
+    width: 50%;
+    margin-left: 200px;
+}
+.ref_h1_title{
+    font-size: 48px;
+    top: 25%;
+    position: absolute;
+    color: white;
+    
+}
+.ref_title_img{
+    z-index: 99;
+    margin-top: -620px;
+    margin-left: 60px;
+}
+
+.ref_title_img img{
+    width: 130%;
+}
+
+
+
+.ref_icon{
+    position: relative;
+    margin-top: -35px;
+     width: 100%;
+ 
+ }
+ .ref_home_icon a img{
+     position: relative;
+     width: 40%;
+ }
+
+ .ref_home_icon a{
+     margin: 0px;
+     width: 107px;
+ }
+ 
+ .ref_home_icon{
+     text-align: center;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     width:20% ;
+     position: relative;
+     background-color: whitesmoke;
+     box-shadow: 0px 10px 22px -2px #BFBFBF;
+     margin-left: 10%;
+     height: 45px;
+     border-radius: 30px;
+     display: flex;
+ }
+ .ref_home_icon a p{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration-line: none !important;
+     
+ }
+ .ref_border1{
+ margin-top: 6px;
+ border: 2px solid #434141;
+ height: 30px;
+ width: 1px;
+ background-color: #434141;
+ 
+ }
+ .ref_icon p{
+     margin-top: 10px;
+     font-size: 24px;
+     font-weight: 600;
+     margin-left: 32px;
+     
+ }
+
+
+  /* category css */
+
+.ref_category{
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 100px;
+
+}
+.ref_category_contents{
+    position: relative;
+    height: 1400px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+
+.ref_category_lists{
+    border-right: 3px solid;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 18%;
+
+}
+
+
+.ref_list_item1{
+    position: fixed;
+    top: 25%;
+    display: grid;
+    width: 16%;
+}
+
+.ref_category_lists #ref_list_item button h4{
+    font-size: 28px !important;
+    margin: 0px;
+    padding-top: 13px;
+    height: 44px;
+    /* background-color: #434141; */
+    color: #434141;
+}
+.ref_category_lists #ref_list_item button{
+    text-decoration-line: none;
+    display: inline-table;
+    position: relative;
+    font-size: 20px;
+    width: 225px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    color: #434141;
+    font-weight: 600;
+    /* border: 2px solid #434141; */
+
+}
+.ref_category_lists #ref_list_item button.active{
+    background-color:rgb(53, 174, 227) ;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+.ref_of_home h1{
+    border-left: 4px solid #434141;
+    padding-left: 16px;
+    font-size: 32px;
+}
+
+.home_objective{
+    width: 94%;
+    display: flex;
+}
+.show_categories{
+    width: 100%;
+    margin-left: 20px;
+    height: 500px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* color: whitesmoke; */
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.referenced{
+    width: 50%;
+    height: 870px;
+    border: 2px solid #434141;
+    margin-left: 15px;
+}
+
+.home_tit{
+    margin-bottom: 16px;
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 94%;
+    display: flex;
+}
+.to_be{
+    width: 50%;
+    text-align: center;
+}
+
+.difference_point{
+    width: 94%;
+    height: 300px;
+    /* border: 2px solid #434141; */
+}
+
+.difference_point li a{
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration-line: none;
+    /* color: black; */
+}
+
+.difference_point li p{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.referenced img{
+    width: 100%;
+}
+
+.actual img{
+    width: 100%;
+    height:870px ;
+
+}
+
+

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="../css/shop_page.css">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 
 <body>
@@ -80,7 +79,7 @@
                     <button href="#" style="padding:0px ;">
                         <h4>Categories</h4>
                     </button>
-                    <button class="category_type" onclick="openCity('cameras')" href="#">Cameras</button>
+                    <button class="category_type active" onclick="openCity('cameras')" href="#">Cameras</button>
                     <button class="category_type" onclick="openCity('lenses')" href="#">Lenses</button>
                     <button class="category_type" onclick="openCity('cells')" href="#">Cells</button>
                     <button class="category_type" onclick="openCity('')" href="#">Memory Cards</button>
@@ -104,7 +103,7 @@
 
                     <div class="products">
                         <div class="product1">
-                            <a class="view-btn" onclick="click()" href="#">
+                            <a class="view-btn" onclick="click(event)" href="#">
                                 <div class="product_image">
                                     <img src="../srcs/casual/can1.png" alt="">
 
@@ -135,7 +134,7 @@
                                     <div class="model_galary">
                                         <img src="../srcs/casual/can1.png" alt="">
                                         <img src="../srcs/casual/can1.png" alt="">
-                                        <img src="../srs/casual/can1.png" alt="">
+                                        <img src="../srcs/casual/can1.png" alt="">
                                         <!-- <img src="./casual/can1.png" alt=""> -->
                                     </div>
                                 </div>
@@ -937,7 +936,7 @@
                 </div>
                 <div class="footer_content">
                     <div class="Best_Seller">
-                        <h4>Best Selle </h4>
+                        <h4>Best Seller </h4>
                         <p>Specials</p>
                         <p>New products</p>
                         <p>Site maps</p>
@@ -960,11 +959,11 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem ratione eligendi!</p>
                         <div class="locta" style="display:flex;">
                             <img src="../srcs/image/gm2.png" alt="">
-                            <p>kathmandu, Putalisadak</p>
+                            <p>Kamalpokhari,Kathmandu</p>
                         </div> <br>
                         <div class="locta" style="display:flex;">
                             <img src="../srcs/image/gm1.png" alt="">
-                            <p>jaiswalavishek2059@gmail.com</p>
+                            <p>info_atclickit.com</p>
                         </div> <br>
                         <div class="locta" style="display:flex;">
                             <img src="../srcs/image/gm3.png" alt="">
@@ -973,13 +972,7 @@
     
     
                     </div>
-                    <!-- <div class="Best_Seller">
-                        <h4>Feedback</h4>
-                        <input type="text" name="gmail" id="" placeholder="eg:asdfghjkl@gmil.com"><br>
-                        <input type="text" name="Password" id="" placeholder="Password"><br>
-                        <input class="descri" type="text" name="desc" id="" placeholder="Description"><br>
-                        <button class="end" type="button">Send</button>
-                    </div> -->
+                   
     
     
                 </div>
@@ -1030,6 +1023,7 @@
         viewBtns.forEach((btn, index) => {
             btn.addEventListener("click", () => {
                 modals[index].style.display = "block";
+                event.preventDefault();
             });
         });
 
@@ -1048,8 +1042,30 @@
                 }
             });
         });
+         
+        function click(event){
+            event.preventDefault();
+            return false;
+        }
 
     </script>
+
+<script>
+    // Add active class to the current button (highlight it)
+    var items = document.getElementsByClassName("category_type");
+
+    for (var i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function () {
+            // Remove active class from all items
+            for (var j = 0; j < items.length; j++) {
+                items[j].classList.remove("active");
+            }
+
+            // Add active class to the clicked item
+            this.classList.add("active");
+        });
+    }
+</script>
 </body>
 
 </html>

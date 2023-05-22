@@ -1,5 +1,4 @@
 * {
-    /* margin: 10px; */
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -64,8 +63,25 @@ body {
     grid-gap: 30px;
 }
 
+.about_member_button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 130px;
+    color: white;
+    background-color: grey;
+    margin-top:5px;
+    margin-left: 20px;
+    padding: 14px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
 
-
+.about_member_button:hover {
+    color: black;
+    background-color: red;
+    font-size: 18px;
+}
 
 
 .img1 {
@@ -113,6 +129,7 @@ body {
 }
 
 .col {
+    margin: 15px;
     position: relative;
     top: 50px;
 }
@@ -125,7 +142,6 @@ body {
 /* //navbar css */
 header{
     /* background-color: #e5e3dc; */
-    top: 0px;
      position: relative;
      height: 5.6vh;
      width: 100%;
@@ -133,14 +149,11 @@ header{
  }
 
 .navbar{
-    /* position: relative; */
     padding-top: 2.5px;
     padding-bottom: 2.5px;
-    /* left: 5%; */
     width: 100%;
-    /* border-radius: 20px; */
     z-index: 99;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 5.6vh;
     background-color: #434141;
     display: flex;
@@ -149,13 +162,6 @@ header{
     transition: all 0.5s ease;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-radius: 0px;
-}
 .navbar img {
     position: relative;
     right: 16%;
@@ -222,9 +228,3 @@ header{
 }
 /* navbar css ended */
 
-
-/* footer starts */
-
-/* footer css */
-
-/* // footer ends   */
